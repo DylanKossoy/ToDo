@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    margin: 0;
+    overflow: none;
+}
+
+
+
+
+
+.background-container {
+    background: rgb(107, 107, 107);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-container {
+    position: absolute;
+    top: 20px;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.todo-header {
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+
+
+.main-container {
+    width: 800px;
+    height: 700px;
+    background: rgb(63, 63, 63);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-top-container {
+    height: 150px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    width: 700px;
+    height: 60px;
+    border: none;
+    background: rgb(190, 190, 190);
+    padding-left: 1rem;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.search-input:focus {
+    border: none;
+    outline: none;
+}
+
+.addButton {
+    position: absolute;
+    right: 50px;
+
+    width: 100px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(221, 85, 85);
+    border: none;
+    cursor: pointer;
+    color: white;
+
+
+
+}
+
+.addButton:hover {
+    background: rgb(128, 2, 2);
+}
+
+
+.main-bottom-container {
+   
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    
+    overflow-y: auto;
+}
+
+.list-item {
+    width: 700px;
+    height: 60px;
+    background: rgb(190, 190, 190);
+    display: flex;
+
+}
+
+.list-text-container {
+    width: 94%;
+    
+    display: flex;
+    padding-left: 1rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    align-items: center;
+    justify-content: start;
+}
+
+.list-delete-container {
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.deleteButton {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    background: rgb(208, 74, 74);
+    color: white;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background: rgb(128, 2, 2);
+}
+
+
+
+
+
